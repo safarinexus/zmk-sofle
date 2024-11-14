@@ -53,12 +53,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:volume-off$$
+  - PLAY PAUSE
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-command$$
-  - {t: PLAY PAUSE, h: '3'}
+  - {t: '$$mdi:skip-next$$', h: '3'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:arrow-left-bold$$', h: '0'}
   - $$mdi:keyboard-space$$
@@ -248,7 +248,7 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:volume-low$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:volume-off$$
+  - $$mdi:skip-previous$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
