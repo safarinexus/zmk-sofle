@@ -53,12 +53,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
-  - PLAY PAUSE
+  - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-command$$
-  - {t: '$$mdi:skip-next$$', h: mouse}
+  - {t: PLAY PAUSE, h: mouse}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:arrow-left-bold$$', h: symbol}
   - $$mdi:keyboard-space$$
@@ -467,5 +467,13 @@ combos:
   l: [mac, win]
 - p: [10, 11]
   k: {t: '=', s: +}
+  l: [mac, win]
 - p: [9, 10]
   k: {t: '-', s: _}
+  l: [mac, win]
+- p: [57, 56]
+  k: $$mdi:skip-next$$
+  l: [mac, win]
+- p: [57, 55]
+  k: $$mdi:skip-previous$$
+  l: [mac, win]
