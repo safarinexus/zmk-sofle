@@ -84,8 +84,14 @@
         };
 
         lock {
-            bindings = <&tog 6>;
+            bindings = <&tog 7>;
             key-positions = <39 51>;
+        };
+
+        mute {
+            bindings = <&kp C_MUTE>;
+            key-positions = <11 10>;
+            layers = <5>;
         };
     };
 
@@ -94,7 +100,7 @@
 
         layer_0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2        &kp N3     &kp N4    &kp N5                &mmv MOVE_UP     &kp N6      &kp N7     &kp N8            &kp N9              &kp N0           &kp DELETE
+&kp ESC     &kp N1     &kp N2        &kp N3     &kp N4    &kp N5                &mmv MOVE_UP     &kp N6      &kp N7     &kp N8            &kp N9              &kp N0           &lt 5 DEL
 &kp TAB     &kp Q      &kp W         &kp E      &kp R     &kp T                 &mmv MOVE_DOWN   &kp Y       &kp U      &kp I             &kp O               &kp P            &kp BACKSPACE
 &mo 2       &kp A      &kp S         &kp D      &kp F     &kp G                 &mmv MOVE_LEFT   &kp H       &kp J      &kp K             &kp L               &kp SEMI         &kp ENTER
 &kp LSHFT   &kp Z      &kp X         &kp C      &kp V     &kp B                 &mmv MOVE_RIGHT  &kp N       &kp M      &kp COMMA         &kp DOT             &kp FSLH         &kp RSHIFT
@@ -109,11 +115,11 @@
         layer_1 {
             display-name = "win";
             bindings = <
-&kp ESC           &kp N1     &kp N2        &kp N3     &kp N4     &kp N5          &mmv MOVE_UP     &kp N6      &kp N7     &kp N8        &kp N9              &kp N0          &kp DELETE
-&kp TAB           &kp Q      &kp W         &kp E      &kp R      &kp T           &mmv MOVE_DOWN   &kp Y       &kp U      &kp I         &kp O               &kp P           &kp BACKSPACE
-&mo 2             &kp A      &kp S         &kp D      &kp F      &kp G           &mmv MOVE_LEFT   &kp H       &kp J      &kp K         &kp L               &kp SEMI        &kp ENTER
-&kp LSHFT         &kp Z      &kp X         &kp C      &kp V      &kp B           &mmv MOVE_RIGHT  &kp N       &kp M      &kp COMMA     &kp DOT             &kp FSLH        &kp RSHIFT
-&kp C_PLAY_PAUSE  &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &kp LCTRL  &lt 3 C_NEXT    &mkp LCLK        &lt 4 LEFT  &kp SPACE  &mt RCTRL UP  &mt RIGHT_ALT DOWN  &mt RGUI RIGHT
+&kp ESC     &kp N1     &kp N2        &kp N3     &kp N4     &kp N5                &mmv MOVE_UP     &kp N6      &kp N7     &kp N8        &kp N9              &kp N0          &lt 5 DEL
+&kp TAB     &kp Q      &kp W         &kp E      &kp R      &kp T                 &mmv MOVE_DOWN   &kp Y       &kp U      &kp I         &kp O               &kp P           &kp BACKSPACE
+&mo 2       &kp A      &kp S         &kp D      &kp F      &kp G                 &mmv MOVE_LEFT   &kp H       &kp J      &kp K         &kp L               &kp SEMI        &kp ENTER
+&kp LSHFT   &kp Z      &kp X         &kp C      &kp V      &kp B                 &mmv MOVE_RIGHT  &kp N       &kp M      &kp COMMA     &kp DOT             &kp FSLH        &kp RSHIFT
+&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &kp LCTRL  &lt 3 C_PLAY_PAUSE    &mkp LCLK        &lt 4 LEFT  &kp SPACE  &mt RCTRL UP  &mt RIGHT_ALT DOWN  &mt RGUI RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -122,11 +128,11 @@
 
         layer_2 {
             bindings = <
-&trans      &kp F1    &kp F2    &kp F3     &kp F4     &kp F5    &trans  &kp F6           &kp F7           &kp F8           &kp F9           &kp F10        &trans
-&trans      &kp HOME  &kp UP    &kp END    &kp PG_UP  &trans    &trans  &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE  &trans
-&trans      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &trans    &trans  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &trans
-&caps_word  &trans    &trans    &trans     &trans     &trans    &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT     &trans
-&trans      &trans    &trans    &trans     &trans     &trans    &trans  &trans           &trans           &trans           &trans           &trans
+&trans      &kp F1      &kp F2    &kp F3           &kp F4     &kp F5     &trans  &kp F6           &kp F7           &kp F8           &kp F9           &kp F10        &trans
+&trans      &kp HOME    &kp UP    &kp END          &kp PG_UP  &kp F11    &trans  &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE  &trans
+&trans      &kp LEFT    &kp DOWN  &kp RIGHT        &kp PG_DN  &kp F12    &trans  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &trans
+&caps_word  &kp INSERT  &trans    &kp PAUSE_BREAK  &trans     &trans     &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT     &trans
+&trans      &trans      &trans    &trans           &trans     &trans     &trans  &trans           &trans           &trans           &trans           &trans
             >;
 
             display-name = "arrow";
@@ -135,15 +141,14 @@
 
         layer_3 {
             bindings = <
-&trans      &kp F11         &kp F12         &trans           &trans          &trans      &msc SCRL_UP     &trans            &trans           &trans           &trans           &trans           &trans
-&trans      &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &msc SCRL_UP    &trans      &msc SCRL_DOWN   &rgb_ug RGB_EFF   &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI
-&tog 2      &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans      &msc SCRL_LEFT   &rgb_ug RGB_EFR   &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD
-&trans      &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &mkp MB4        &mkp MB5    &msc SCRL_RIGHT  &kp C_PLAY_PAUSE  &kp C_NEXT       &kp C_VOL_UP     &kp C_VOL_DN     &kp C_VOL_DN     &trans
-&kp C_PREV  &trans          &trans          &trans           &trans          &trans      &mkp RCLK        &trans            &trans           &trans           &trans           &trans
+&trans  &kp F11         &kp F12         &trans           &trans          &trans      &msc SCRL_UP     &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &msc SCRL_UP    &trans      &msc SCRL_DOWN   &trans  &trans  &trans  &trans  &trans  &trans
+&tog 2  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN  &trans      &msc SCRL_LEFT   &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &msc SCRL_LEFT  &mkp MB3        &msc SCRL_RIGHT  &mkp MB4        &mkp MB5    &msc SCRL_RIGHT  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans           &trans          &trans      &mkp RCLK        &trans  &trans  &trans  &trans  &trans
             >;
 
             display-name = "mouse";
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
             label = "mouse";
         };
 
@@ -157,22 +162,36 @@
 &trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans            &trans             &trans
 &trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans            &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
 
         layer_5 {
             bindings = <
-&soft_off  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8   &kp F9   &kp F10  &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11  &kp F12  &trans   &trans
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans   &trans   &trans   &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &trans   &trans   &trans   &trans
-&trans     &tog 1        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans      &trans      &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans      &trans      &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans      &trans      &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans      &trans      &trans        &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
-            label = "admin";
+            label = "media";
+            sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>;
         };
 
         layer_6 {
+            bindings = <
+&bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans           &trans           &trans           &trans           &trans           &trans
+&trans          &bt BT_CLR    &trans        &trans        &trans        &trans          &trans  &rgb_ug RGB_EFR  &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI
+&trans          &out OUT_USB  &out OUT_BLE  &trans        &trans        &trans          &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPI
+&trans          &trans        &trans        &trans        &trans        &trans          &trans  &trans           &trans           &trans           &trans           &trans           &trans
+&trans          &tog 1        &trans        &trans        &trans        &trans          &trans  &trans           &trans           &trans           &trans           &trans
+            >;
+
+            label = "admin";
+        };
+
+        layer_7 {
             bindings = <
 &none   &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
 &none   &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
@@ -190,7 +209,7 @@
 
         admin {
             if-layers = <3 4>;
-            then-layer = <5>;
+            then-layer = <7>;
         };
     };
 };
