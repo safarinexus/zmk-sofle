@@ -209,7 +209,7 @@
 
         admin {
             if-layers = <3 4>;
-            then-layer = <7>;
+            then-layer = <6>;
         };
     };
 };
