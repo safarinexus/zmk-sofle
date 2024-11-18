@@ -52,7 +52,7 @@
             bindings = <&kp RBKT>;
             key-positions = <23 24>;
             layers = <0 1>;
-            timeout-ms = <20>;
+            timeout-ms = <5>;
         };
 
         single_quote {
