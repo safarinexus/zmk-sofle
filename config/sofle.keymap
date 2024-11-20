@@ -100,7 +100,7 @@
 
         six {
             bindings = <&kp N6>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
             timeout-ms = <18>;
             layers = <0 1>;
         };
