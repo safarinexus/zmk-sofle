@@ -97,6 +97,13 @@
             key-positions = <11 10>;
             layers = <5>;
         };
+
+        six {
+            bindings = <&kp N6>;
+            key-positions = <1 2>;
+            timeout-ms = <18>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
