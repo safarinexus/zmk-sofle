@@ -698,6 +698,11 @@ rect.held, rect.combo.held {
 <text x="462" y="224" class="combo tap layer-activator">lock</text>
 </a><text x="462" y="235" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="98" y="33" width="28" height="26" class="combo"/>
+<text x="112" y="46" class="combo tap">6</text>
+<text x="112" y="35" class="combo shifted">^</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 388)" class="layer-win">
@@ -1095,6 +1100,11 @@ rect.held, rect.combo.held {
 <a href="#lock">
 <text x="462" y="224" class="combo tap layer-activator">lock</text>
 </a><text x="462" y="235" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="98" y="33" width="28" height="26" class="combo"/>
+<text x="112" y="46" class="combo tap">6</text>
+<text x="112" y="35" class="combo shifted">^</text>
 </g>
 </g>
 </g>
