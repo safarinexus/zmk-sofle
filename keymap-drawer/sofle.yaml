@@ -547,6 +547,6 @@ combos:
 - p: [11, 10]
   k: $$mdi:volume-off$$
   l: [media]
-- p: [1, 2]
+- p: [2, 3]
   k: {t: '6', s: ^}
   l: [mac, win]
