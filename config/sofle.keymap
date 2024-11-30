@@ -84,7 +84,7 @@
 &none  &kp HOME         &kp UP    &kp END     &kp PG_UP  &none    &none  &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE  &none
 &none  &kp LEFT         &kp DOWN  &kp RIGHT   &kp PG_DN  &none    &none  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &none
 &none  &kp PAUSE_BREAK  &none     &kp INSERT  &none      &none    &none  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT     &none
-&none  &none            &tog 4    &tog 4      &trans     &none    &none  &none            &trans           &trans           &trans           &none
+&none  &none            &tog 3    &tog 4      &trans     &none    &none  &none            &trans           &trans           &trans           &none
             >;
 
             label = "left";
