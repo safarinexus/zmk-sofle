@@ -38,6 +38,16 @@
         tap-ms = <30>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        lock {
+            bindings = <&tog 8>;
+            key-positions = <39 51>;
+            layers = <0 2 1 8>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -69,8 +79,8 @@
         layer_2 {
             bindings = <
 &trans     &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &lt 6 ESC  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB    &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &trans  &trans  &kp SPACE  &trans  &trans    &trans  &trans  &mo 5   &trans  &trans  &trans
             >;
@@ -155,8 +165,8 @@
         compatible = "zmk,conditional-layers";
 
         admin {
-            if-layers = <7 7>;
-            then-layer = <8>;
+            if-layers = <3 4>;
+            then-layer = <7>;
         };
     };
 };
