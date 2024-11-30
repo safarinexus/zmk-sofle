@@ -167,11 +167,11 @@
             label = "symbol";
             display-name = "symbol";
             bindings = <
-&kp GRAVE  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp MINUS         &kp EQUAL          &kp BACKSLASH
-&trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp SQT           &trans             &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans            &trans             &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans            &trans
+&trans  &kp GRAVE  &trans  &trans    &trans      &trans         &trans  &trans     &trans         &kp MINUS     &kp EQUAL             &kp BACKSLASH          &trans
+&trans  &none      &none   &none     &none       &none          &trans  &none      &kp LBKT       &kp RBKT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &kp EXCL   &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp SQT               &trans                 &trans
+&trans  &none      &none   &none     &none       &none          &trans  &none      &none          &trans        &trans                &trans                 &trans
+&trans  &trans     &trans  &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
