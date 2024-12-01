@@ -43,6 +43,8 @@
         label = "MOUSE_BUTTON";
         #binding-cells = <0>;
         bindings = <&lt 2 C_PLAY_PAUSE>, <&tog 2>;
+
+        tapping-term-ms = <100>;
     };
 
     os_swap: os_swap {
