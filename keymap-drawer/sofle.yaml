@@ -479,7 +479,7 @@ combos:
   l: [mac, win]
 - p: [39, 51]
   k: {t: lock, h: toggle}
-  l: [mac, win]
+  l: [mac, win, lock]
 - p: [11, 10]
   k: $$mdi:volume-off$$
   l: [mouse]
