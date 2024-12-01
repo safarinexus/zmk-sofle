@@ -49,7 +49,7 @@
         compatible = "zmk,behavior-tap-dance";
         label = "OS_SWAP";
         #binding-cells = <0>;
-        bindings = <&kp ESC>, <&tog 1>;
+        bindings = <&kp LCTRL>, <&tog 1>;
     };
 
     combos {
@@ -132,11 +132,11 @@
 
         layer_0 {
             bindings = <
-&os_swap    &kp N1     &kp N2        &kp N3     &kp N4    &kp N5           &mmv MOVE_UP     &kp N6      &kp N7     &kp N8            &kp N9              &kp N0           &lt 2 DEL
-&kp TAB     &kp Q      &kp W         &kp E      &kp R     &kp T            &mmv MOVE_DOWN   &kp Y       &kp U      &kp I             &kp O               &kp P            &kp BACKSPACE
-&lt 4 DEL   &kp A      &kp S         &kp D      &kp F     &kp G            &mmv MOVE_LEFT   &kp H       &kp J      &kp K             &kp L               &kp SEMI         &kp ENTER
-&kp LSHFT   &kp Z      &kp X         &kp C      &kp V     &kp B            &mmv MOVE_RIGHT  &kp N       &kp M      &kp COMMA         &kp DOT             &kp FSLH         &kp RSHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &kp SPACE  &kp LCMD  &mouse_button    &mkp LCLK        &lt 3 LEFT  &kp SPACE  &mt RIGHT_ALT UP  &mt RIGHT_GUI DOWN  &mt RCTRL RIGHT
+&kp ESCAPE  &kp N1    &kp N2        &kp N3     &kp N4    &kp N5           &mmv MOVE_UP     &kp N6      &kp N7     &kp N8            &kp N9              &kp N0           &lt 2 DEL
+&kp TAB     &kp Q     &kp W         &kp E      &kp R     &kp T            &mmv MOVE_DOWN   &kp Y       &kp U      &kp I             &kp O               &kp P            &kp BACKSPACE
+&lt 4 DEL   &kp A     &kp S         &kp D      &kp F     &kp G            &mmv MOVE_LEFT   &kp H       &kp J      &kp K             &kp L               &kp SEMI         &kp ENTER
+&kp LSHFT   &kp Z     &kp X         &kp C      &kp V     &kp B            &mmv MOVE_RIGHT  &kp N       &kp M      &kp COMMA         &kp DOT             &kp FSLH         &kp RSHIFT
+&kp C_MUTE  &os_swap  &kp LEFT_ALT  &kp SPACE  &kp LCMD  &mouse_button    &mkp LCLK        &lt 3 LEFT  &kp SPACE  &mt RIGHT_ALT UP  &mt RIGHT_GUI DOWN  &mt RCTRL RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -147,11 +147,11 @@
         layer_1 {
             display-name = "win";
             bindings = <
-&trans      &kp N1     &kp N2        &kp N3  &kp N4     &kp N5    &mmv MOVE_UP     &kp N6  &kp N7     &kp N8        &kp N9              &kp N0          &trans
-&trans      &trans     &trans        &kp E   &kp R      &kp T     &mmv MOVE_DOWN   &kp Y   &kp U      &kp I         &kp O               &kp P           &kp BACKSPACE
-&trans      &kp A      &kp S         &kp D   &kp F      &kp G     &mmv MOVE_LEFT   &kp H   &kp J      &kp K         &kp L               &kp SEMI        &kp ENTER
-&trans      &kp Z      &kp X         &kp C   &kp V      &kp B     &mmv MOVE_RIGHT  &kp N   &kp M      &kp COMMA     &kp DOT             &kp FSLH        &kp RSHIFT
-&kp C_MUTE  &kp LCTRL  &kp LEFT_ALT  &trans  &kp LCTRL  &trans    &mkp LCLK        &trans  &kp SPACE  &mt RCTRL UP  &mt RIGHT_ALT DOWN  &mt RGUI RIGHT
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans     &trans        &trans              &trans          &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans     &trans        &trans              &trans          &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans     &trans        &trans              &trans          &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans  &trans     &trans        &trans              &trans          &trans
+&trans  &trans  &trans  &trans  &kp LCTRL  &trans    &trans  &trans  &kp SPACE  &mt RCTRL UP  &mt RIGHT_ALT DOWN  &mt RGUI RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
