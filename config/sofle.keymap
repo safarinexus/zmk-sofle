@@ -143,7 +143,7 @@
 &trans      &kp HOME    &kp UP    &kp END          &kp PG_UP  &kp F11    &trans  &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE  &trans
 &trans      &kp LEFT    &kp DOWN  &kp RIGHT        &kp PG_DN  &kp F12    &trans  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &trans
 &caps_word  &kp INSERT  &trans    &kp PAUSE_BREAK  &trans     &trans     &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT     &trans
-&trans      &trans      &trans    &trans           &trans     &trans     &trans  &trans           &trans           &trans           &trans           &trans
+&trans      &trans      &trans    &trans           &trans     &tog 3     &trans  &trans           &trans           &trans           &trans           &trans
             >;
 
             display-name = "arrow";
@@ -167,11 +167,11 @@
             label = "symbol";
             display-name = "symbol";
             bindings = <
-&trans  &kp GRAVE  &trans  &trans    &trans      &trans         &trans  &trans     &trans         &kp MINUS     &kp EQUAL             &kp BACKSLASH          &trans
-&trans  &none      &none   &none     &none       &none          &trans  &none      &kp LBKT       &kp RBKT      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp EXCL   &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp SQT               &trans                 &trans
-&trans  &none      &none   &none     &none       &none          &trans  &none      &none          &trans        &trans                &trans                 &trans
-&trans  &trans     &trans  &trans    &trans      &trans         &trans  &trans     &trans         &trans        &trans                &trans
+&kp GRAVE  &trans    &trans  &trans    &trans      &trans              &trans  &trans             &trans         &trans        &trans                &trans                 &kp BACKSLASH
+&trans     &none     &none   &none     &none       &kp LEFT_BRACKET    &trans  &kp RIGHT_BRACKET  &kp MINUS      &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans     &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT         &trans  &kp CARET          &kp AMPERSAND  &kp ASTERISK  &kp SQT               &trans                 &trans
+&trans     &none     &none   &none     &none       &none               &trans  &none              &none          &trans        &trans                &trans                 &trans
+&trans     &trans    &trans  &trans    &trans      &trans              &trans  &trans             &trans         &trans        &trans                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
