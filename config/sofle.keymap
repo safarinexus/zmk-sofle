@@ -104,7 +104,7 @@
         lock {
             bindings = <&tog 6>;
             key-positions = <39 51>;
-            layers = <0 1>;
+            layers = <0 1 6>;
         };
 
         mute {
