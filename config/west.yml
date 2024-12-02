@@ -2,15 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/petejohanson
-    - name: gpeye
-      url-base: https://github.com/GPeye
+    - name: infely                             
+      url-base: https://github.com/infely      
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: feat/pointers-move-scroll
       import: app/west.yml
-    - name: urchin-peripheral-animation
-      remote: gpeye
-      revision: main 
+    - name: nice-view-battery                 
+      remote: infely                          
+      revision: main                          
   self:
     path: config
