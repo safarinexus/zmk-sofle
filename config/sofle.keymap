@@ -175,11 +175,11 @@
             label = "symbol";
             display-name = "symbol";
             bindings = <
-&trans  &trans    &trans  &trans    &trans      &trans         &trans  &trans         &trans         &trans                &trans    &trans                 &trans
-&trans  &none     &none   &none     &none       &kp GRAVE      &trans  &kp BACKSLASH  &kp LBKT       &kp LEFT_PARENTHESIS  &kp RBKT  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &trans  &kp CARET      &kp AMPERSAND  &kp ASTERISK          &kp SQT   &trans                 &trans
-&trans  &none     &none   &none     &none       &none          &trans  &kp MINUS      &kp EQUAL      &trans                &trans    &trans                 &trans
-&trans  &trans    &trans  &trans    &trans      &trans         &trans  &trans         &trans         &trans                &trans    &trans
+&trans  &trans     &trans                 &trans             &trans           &trans         &trans  &trans     &trans          &trans            &trans                &trans         &trans
+&trans  &kp GRAVE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &none          &trans  &none      &kp LEFT_BRACE  &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp BACKSLASH  &trans
+&trans  &kp EXCL   &kp AT                 &kp HASH           &kp DOLLAR       &kp PERCENT    &trans  &kp CARET  &kp AMPERSAND   &kp ASTERISK      &kp SQT               &trans         &trans
+&trans  &none      &none                  &none              &none            &none          &trans  &kp MINUS  &kp EQUAL       &trans            &trans                &trans         &trans
+&trans  &trans     &trans                 &trans             &trans           &trans         &trans  &trans     &trans          &trans            &trans                &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
