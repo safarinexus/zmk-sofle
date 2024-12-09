@@ -42,9 +42,9 @@
         compatible = "zmk,combos";
 
         lock {
-            bindings = <&tog 8>;
+            bindings = <&tog 2>;
             key-positions = <39 51>;
-            layers = <0 2 1 8>;
+            layers = <0 1 2>;
         };
     };
 
@@ -53,11 +53,11 @@
 
         layer_0 {
             bindings = <
-&none       &none         &none      &none      &none         &none    &mmv MOVE_UP     &none  &none      &none          &none              &none             &none
-&none       &kp Q         &kp W      &kp E      &kp R         &kp T    &mmv MOVE_DOWN   &kp Y  &kp U      &kp I          &kp O              &kp P             &none
-&none       &kp A         &kp S      &kp D      &kp F         &kp G    &mmv MOVE_LEFT   &kp H  &kp J      &kp K          &kp L              &kp BACKSPACE     &none
-&none       &mt Z LSHIFT  &kp X      &kp C      &kp V         &kp B    &mmv MOVE_RIGHT  &kp N  &kp M      &kp COMMA      &kp DOT            &mt RSHIFT ENTER  &none
-&kp C_MUTE  &none         &kp LCTRL  &lt 5 DEL  &kp LEFT_GUI  &none    &mkp LCLK        &none  &kp SPACE  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &none
+&none       &none         &none      &none         &none      &none    &mmv MOVE_UP     &none  &none  &none      &none          &none             &none
+&none       &kp Q         &kp W      &kp E         &kp R      &kp T    &mmv MOVE_DOWN   &kp Y  &kp U  &kp I      &kp O          &kp P             &none
+&none       &kp A         &kp S      &kp D         &kp F      &kp G    &mmv MOVE_LEFT   &kp H  &kp J  &kp K      &kp L          &kp BACKSPACE     &none
+&none       &mt Z LSHIFT  &kp X      &kp C         &kp V      &kp B    &mmv MOVE_RIGHT  &kp N  &kp M  &kp COMMA  &kp DOT        &mt RSHIFT SLASH  &none
+&kp C_MUTE  &none         &kp LCTRL  &kp LEFT_GUI  &lt 5 DEL  &none    &mkp LCLK        &none  &mo 6  &kp SPACE  &kp RIGHT_ALT  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -66,11 +66,11 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans     &trans  &trans        &trans    &trans  &trans  &trans  &trans     &trans         &trans  &trans
-&trans  &trans  &trans     &trans  &trans        &trans    &trans  &trans  &trans  &trans     &trans         &trans  &trans
-&trans  &trans  &trans     &trans  &trans        &trans    &trans  &trans  &trans  &trans     &trans         &trans  &trans
-&trans  &trans  &trans     &trans  &trans        &trans    &trans  &trans  &trans  &trans     &trans         &trans  &trans
-&trans  &trans  &kp LCTRL  &trans  &kp LEFT_ALT  &trans    &trans  &trans  &trans  &kp RCTRL  &kp RIGHT_GUI  &trans
+&trans  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &kp LEFT_ALT  &trans  &trans    &trans  &trans  &trans  &trans  &kp RCTRL  &trans
             >;
 
             label = "win";
@@ -78,77 +78,89 @@
 
         layer_2 {
             bindings = <
-&trans     &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&lt 6 ESC  &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB    &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &trans     &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans  &trans  &kp SPACE  &trans  &trans    &trans  &trans  &trans  &trans  &mo 5   &trans
+&trans  &trans  &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2    &kp N3     &kp N4     &kp N5    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp Q   &kp W     &kp E      &kp R      &kp T     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp A   &kp S     &kp V      &kp F      &kp B     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LALT  &kp SPACE  &kp LCTRL  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "league";
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans     &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp TAB    &kp Q     &kp W      &kp E      &kp R     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo 4      &kp A     &kp S      &kp D      &kp F     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LSHFT  &kp Z     &kp X      &kp C      &kp V     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp LALT  &kp SPACE  &kp LCTRL  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             label = "game";
         };
 
-        layer_3 {
+        layer_4 {
             bindings = <
-&none  &none            &none     &none       &none      &none    &none  &none            &none            &none            &none            &none          &none
-&none  &kp HOME         &kp UP    &kp END     &kp PG_UP  &none    &none  &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE  &none
-&none  &kp LEFT         &kp DOWN  &kp RIGHT   &kp PG_DN  &none    &none  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &none
-&none  &kp PAUSE_BREAK  &none     &kp INSERT  &none      &none    &none  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT     &none
-&none  &none            &tog 3    &trans      &tog 4     &none    &none  &none            &trans           &trans           &trans           &none
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &kp N4    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N5  &kp N6  &kp N7  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "gamenums";
+        };
+
+        layer_5 {
+            bindings = <
+&none  &none       &none         &none         &none       &none                   &none  &none            &none            &none            &none            &none          &none
+&none  &kp HOME    &kp PG_UP     &kp PG_DN     &kp END     &kp C_BRIGHTNESS_INC    &none  &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE  &none
+&none  &kp LEFT    &kp UP        &kp DOWN      &kp RIGHT   &kp C_BRIGHTNESS_DEC    &none  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &none
+&none  &kp C_PREV  &kp C_VOL_UP  &kp C_VOL_DN  &kp C_NEXT  &kp C_PLAY_PAUSE        &none  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT     &none
+&none  &none       &trans        &tog 6        &none       &none                   &none  &none            &trans           &trans           &trans           &none
             >;
 
             label = "left";
         };
 
-        layer_4 {
+        layer_6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans            &trans        &trans        &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp HOME          &kp UP        &kp END       &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp LEFT_ARROW    &kp DOWN      &kp RIGHT     &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp C_PLAY_PAUSE  &kp C_VOL_UP  &kp C_VOL_DN  &trans
-&trans  &trans  &trans  &trans  &tog 4  &trans    &trans  &trans  &trans  &trans            &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                &trans      &trans         &trans        &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_BRIGHTNESS_INC  &kp HOME    &kp PG_DN      &kp PG_UP     &kp END     &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_BRIGHTNESS_DEC  &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp C_PLAY_PAUSE      &kp C_NEXT  &kp C_VOL_UP   &kp C_VOL_DN  &kp C_PREV  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                &trans      &kp RIGHT_GUI  &trans        &trans
             >;
 
             label = "right";
         };
 
-        layer_5 {
+        layer_7 {
             bindings = <
-&none      &none            &none         &none       &none       &none               &none  &none              &none          &none         &none                 &none                  &none
-&kp GRAVE  &none            &none         &none       &none       &kp LEFT_BRACKET    &none  &kp RIGHT_BRACKET  &kp MINUS      &kp EQUAL     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
-&none      &kp EXCLAMATION  &kp AT        &kp HASH    &kp DOLLAR  &kp PERCENT         &none  &kp CARET          &kp AMPERSAND  &kp ASTERISK  &kp SQT               &kp SEMI               &none
-&none      &kp C_VOL_DN     &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &kp C_PLAY_PAUSE    &none  &none              &none          &kp COMMA     &kp DOT               &kp FSLH               &none
-&none      &none            &trans        &trans      &trans      &none               &none  &none              &trans         &trans        &trans                &none
+&none  &none            &none              &none                  &none            &none          &none  &none      &none           &none                 &none             &none          &none
+&none  &kp GRAVE        &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &none          &none  &none      &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp BACKSLASH  &none
+&none  &kp EXCLAMATION  &kp AT             &kp HASH               &kp DOLLAR       &kp PERCENT    &none  &kp CARET  &kp AMPERSAND   &kp ASTERISK          &kp SQT           &kp SEMI       &none
+&none  &none            &none              &none                  &none            &none          &none  &kp MINUS  &kp EQUAL       &kp COMMA             &kp DOT           &trans         &none
+&none  &none            &trans             &trans                 &trans           &none          &none  &none      &trans          &trans                &trans            &none
             >;
 
             label = "symbols";
         };
 
-        layer_6 {
-            bindings = <
-&trans  &trans        &trans        &trans        &trans        &trans              &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5              &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N6        &kp N7        &kp N8        &kp N9        &kp N0              &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV    &kp C_NEXT    &kp C_PLAY_PAUSE    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans        &trans        &trans        &trans        &trans              &trans  &trans  &trans  &trans  &trans  &trans
-            >;
-
-            label = "media";
-        };
-
-        layer_7 {
+        layer_8 {
             bindings = <
 &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans           &trans           &trans           &trans           &trans           &trans
 &trans          &bt BT_CLR    &trans        &trans        &trans        &trans          &trans  &rgb_ug RGB_EFR  &trans           &rgb_ug RGB_BRI  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI
 &trans          &out OUT_USB  &out OUT_BLE  &trans        &trans        &trans          &trans  &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &rgb_ug RGB_BRD  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPI
 &trans          &trans        &trans        &trans        &trans        &trans          &trans  &trans           &trans           &trans           &trans           &trans           &trans
-&trans          &trans        &tog 1        &trans        &tog 2        &trans          &trans  &trans           &trans           &trans           &trans           &trans
+&trans          &trans        &trans        &trans        &tog 1        &trans          &trans  &trans           &trans           &trans           &trans           &trans
             >;
 
             label = "admin";
         };
 
-        layer_8 {
+        layer_9 {
             bindings = <
 &none   &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
 &none   &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
@@ -165,7 +177,12 @@
         compatible = "zmk,conditional-layers";
 
         admin {
-            if-layers = <3 4>;
+            if-layers = <5 6>;
+            then-layer = <8>;
+        };
+
+        symbols {
+            if-layers = <5 6>;
             then-layer = <7>;
         };
     };
