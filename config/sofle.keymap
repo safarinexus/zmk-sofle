@@ -55,7 +55,7 @@
             bindings = <
 &none       &none         &none      &none         &none      &none    &mmv MOVE_UP     &none  &none  &none      &none          &none             &none
 &none       &kp Q         &kp W      &kp E         &kp R      &kp T    &mmv MOVE_DOWN   &kp Y  &kp U  &kp I      &kp O          &kp P             &none
-&none       &kp A         &kp S      &kp D         &kp F      &kp G    &mmv MOVE_LEFT   &kp H  &kp J  &kp K      &kp L          &kp BACKSPACE     &none
+&tog 3      &kp A         &kp S      &kp D         &kp F      &kp G    &mmv MOVE_LEFT   &kp H  &kp J  &kp K      &kp L          &kp BACKSPACE     &tog 2
 &none       &mt Z LSHIFT  &kp X      &kp C         &kp V      &kp B    &mmv MOVE_RIGHT  &kp N  &kp M  &kp COMMA  &kp DOT        &mt RSHIFT SLASH  &none
 &kp C_MUTE  &none         &kp LCTRL  &kp LEFT_GUI  &lt 5 DEL  &none    &mkp LCLK        &none  &mo 6  &kp SPACE  &kp RIGHT_ALT  &none
             >;
@@ -80,7 +80,7 @@
             bindings = <
 &trans  &trans  &trans    &trans     &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp N1  &kp N2    &kp N3     &kp N4     &kp N5    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp Q   &kp W     &kp E      &kp R      &kp T     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&mo 4   &kp Q   &kp W     &kp E      &kp R      &kp T     &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp A   &kp S     &kp V      &kp F      &kp B     &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp LALT  &kp SPACE  &kp LCTRL  &trans    &trans  &trans  &trans  &trans  &trans  &trans
             >;
