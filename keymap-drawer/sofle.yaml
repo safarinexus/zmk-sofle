@@ -56,8 +56,8 @@ layers:
   - $$mdi:volume-off$$
   - '&os_swap'
   - $$mdi:apple-keyboard-option$$
-  - LGUI
   - $$mdi:keyboard-space$$
+  - $$mdi:apple-keyboard-command$$
   - '&mouse_button'
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:arrow-left-bold$$', h: symbol}
@@ -121,8 +121,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
