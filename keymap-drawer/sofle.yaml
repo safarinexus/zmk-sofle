@@ -456,21 +456,6 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
-- p: [22, 23]
-  k: {t: '[', s: '{'}
-  l: [mac, win]
-- p: [23, 24]
-  k: {t: ']', s: '}'}
-  l: [mac, win]
-- p: [36, 37]
-  k: {t: '''', s: '"'}
-  l: [mac, win]
-- p: [10, 11]
-  k: {t: '=', s: +}
-  l: [mac, win]
-- p: [9, 10]
-  k: {t: '-', s: _}
-  l: [mac, win]
 - p: [57, 56]
   k: $$mdi:skip-next$$
   l: [mac, win]
