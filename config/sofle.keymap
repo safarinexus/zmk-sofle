@@ -158,9 +158,9 @@
             bindings = <
 &trans      &kp F1      &kp F2    &kp F3           &kp F4     &kp F5     &trans  &kp F6           &kp F7           &kp F8           &kp F9           &kp F10        &trans
 &tog 4      &kp HOME    &kp UP    &kp END          &kp PG_UP  &kp F11    &trans  &kp KP_ASTERISK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_DIVIDE  &trans
-&trans      &kp LEFT    &kp DOWN  &kp RIGHT        &kp PG_DN  &kp F12    &trans  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS   &trans
-&caps_word  &kp INSERT  &trans    &kp PAUSE_BREAK  &trans     &trans     &trans  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT     &trans
-&trans      &trans      &trans    &trans           &trans     &trans     &trans  &trans           &trans           &trans           &trans           &trans
+&trans      &kp LEFT    &kp DOWN  &kp RIGHT        &kp PG_DN  &kp F12    &trans  &kp KP_PLUS      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp BACKSPACE  &trans
+&caps_word  &kp INSERT  &trans    &kp PAUSE_BREAK  &trans     &trans     &trans  &kp KP_MINUS     &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT     &trans
+&trans      &trans      &trans    &trans           &trans     &trans     &trans  &trans           &kp KP_NUMBER_0  &trans           &trans           &trans
             >;
 
             display-name = "arrow";
