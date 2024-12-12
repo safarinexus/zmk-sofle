@@ -51,7 +51,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, h: '$$mdi:apple-keyboard-shift$$', s: '?'}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -470,7 +470,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '>'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: ']', s: '}'}
   - )
   - '}'
@@ -480,7 +480,7 @@ layers:
   - '{'
   - (
   - {t: '[', s: '{'}
-  - <
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '!'
@@ -492,21 +492,21 @@ layers:
   - ^
   - '&'
   - '*'
-  - {t: ;, s: ':'}
   - {t: '''', s: '"'}
+  - {t: ;, s: ':'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-shift$$
-  - ':'
-  - '"'
-  - '?'
+  - {t: /, s: '?'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - +
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '-', s: _}
   - {t: '=', s: +}
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
