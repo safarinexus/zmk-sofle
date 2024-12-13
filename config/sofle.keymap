@@ -62,6 +62,20 @@
             key-positions = <39 51>;
             layers = <0 1 2>;
         };
+
+        escape {
+            bindings = <&kp ESCAPE>;
+            key-positions = <40 41>;
+            timeout-ms = <180>;
+            layers = <0 1>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <14 15>;
+            timeout-ms = <180>;
+            layers = <0 1>;
+        };
     };
 
     keymap {
