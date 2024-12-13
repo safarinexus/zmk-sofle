@@ -27,7 +27,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '&game'
+  - '&game_button'
   - A
   - S
   - D
@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: league, h: toggle}
+  - '&league_button'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Z
   - X
@@ -51,7 +51,7 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -128,7 +128,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-control$$
+  - '&win_right_mod'
   - {t: '$$mdi:transfer$$', type: trans}
   league:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -388,7 +388,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - KP 0
-  - RIGHT GUI
+  - RGUI
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   right:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -447,12 +447,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: right, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - RIGHT GUI
+  - {t: right, h: toggle}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   symbols:
@@ -518,7 +518,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: admin, h: '$$mdi:gesture-tap-hold$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   admin:
   - BT CLR ALL
@@ -583,7 +583,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   lock:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -651,8 +651,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
 combos:
-- p: [39, 51]
-  k: {t: league, h: toggle}
+- p: [26, 38]
+  k: {t: lock, h: toggle}
   l: [mac, win, league]
 - p: [40, 41]
   k: $$mdi:keyboard-esc$$
