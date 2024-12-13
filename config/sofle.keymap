@@ -100,20 +100,6 @@
             timeout-ms = <180>;
             layers = <3>;
         };
-
-        equal {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 23>;
-            layers = <3>;
-            timeout-ms = <180>;
-        };
-
-        slash {
-            bindings = <&kp SLASH>;
-            key-positions = <49 48>;
-            timeout-ms = <180>;
-            layers = <3>;
-        };
     };
 
     keymap {
@@ -166,9 +152,9 @@
             display-name = "symbol";
             bindings = <
 &trans  &trans      &trans             &trans                 &trans           &trans         &trans  &trans         &trans          &trans                &trans            &trans           &trans
-&trans  &none       &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp GRAVE      &trans  &kp BACKSLASH  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &none            &trans
-&trans  &kp EXCL    &kp AT             &kp HASH               &kp DOLLAR       &kp PERCENT    &trans  &kp CARET      &kp AMPERSAND   &kp ASTERISK          &kp SQT           &kp SEMICOLON    &trans
-&trans  &kp LSHIFT  &none              &none                  &none            &none          &trans  &none          &none           &kp LESS_THAN         &kp GREATER_THAN  &kp RIGHT_SHIFT  &trans
+&trans  &none       &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp GRAVE      &trans  &kp BACKSLASH  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp EQUAL        &trans
+&trans  &kp EXCL    &kp AT             &kp HASH               &kp DOLLAR       &kp PERCENT    &trans  &kp CARET      &kp AMPERSAND   &kp ASTERISK          &kp SEMICOLON     &kp APOS         &trans
+&trans  &kp LSHIFT  &none              &none                  &none            &none          &trans  &kp SLASH      &kp QUESTION    &kp LESS_THAN         &kp GREATER_THAN  &kp RIGHT_SHIFT  &trans
 &trans  &trans      &trans             &trans                 &trans           &trans         &trans  &trans         &trans          &trans                &trans            &trans
             >;
 
