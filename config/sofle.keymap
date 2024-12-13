@@ -76,6 +76,13 @@
             timeout-ms = <180>;
             layers = <0 1>;
         };
+
+        dash {
+            bindings = <&kp MINUS>;
+            key-positions = <23 22>;
+            timeout-ms = <180>;
+            layers = <7>;
+        };
     };
 
     keymap {
