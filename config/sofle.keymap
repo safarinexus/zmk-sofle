@@ -168,7 +168,7 @@
 &trans  &trans      &trans             &trans                 &trans           &trans         &trans  &trans         &trans          &trans                &trans            &trans           &trans
 &trans  &none       &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp GRAVE      &trans  &kp BACKSLASH  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &none            &trans
 &trans  &kp EXCL    &kp AT             &kp HASH               &kp DOLLAR       &kp PERCENT    &trans  &kp CARET      &kp AMPERSAND   &kp ASTERISK          &kp SQT           &kp SEMICOLON    &trans
-&trans  &kp LSHIFT  &none              &none                  &kp SLASH        &kp KP_PLUS    &trans  &kp MINUS      &kp EQUAL       &kp COMMA             &kp PERIOD        &kp RIGHT_SHIFT  &trans
+&trans  &kp LSHIFT  &none              &none                  &none            &none          &trans  &none          &none           &kp LESS_THAN         &kp GREATER_THAN  &kp RIGHT_SHIFT  &trans
 &trans  &trans      &trans             &trans                 &trans           &trans         &trans  &trans         &trans          &trans                &trans            &trans
             >;
 
