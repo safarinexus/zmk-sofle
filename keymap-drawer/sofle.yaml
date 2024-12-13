@@ -660,3 +660,6 @@ combos:
 - p: [14, 15]
   k: $$mdi:keyboard-tab$$
   l: [mac, win]
+- p: [23, 22]
+  k: {t: '-', s: _}
+  l: [symbols]
