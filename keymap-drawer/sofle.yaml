@@ -654,3 +654,9 @@ combos:
 - p: [39, 51]
   k: {t: league, h: toggle}
   l: [mac, win, league]
+- p: [40, 41]
+  k: $$mdi:keyboard-esc$$
+  l: [mac, win]
+- p: [14, 15]
+  k: $$mdi:keyboard-tab$$
+  l: [mac, win]
