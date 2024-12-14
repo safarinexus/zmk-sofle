@@ -59,6 +59,8 @@
         label = "LEFT_THUMB";
         #binding-cells = <0>;
         bindings = <&lt 4 C_PLAY_PAUSE>, <&tog 2>;
+
+        tapping-term-ms = <220>;
     };
 
     combos {
